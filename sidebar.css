@@ -1,0 +1,46 @@
+body{
+    background-color: hsl(0, 0%, 10%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sidebar{
+    width: 50px;
+    height: 40px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+#sidebar img {
+    width: 50px;
+    height: 40px;
+    filter: invert(100%);
+}
+
+#sidebar #nav-items {
+    height: 30%;
+    visibility: collapse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+} 
+#sidebar #nav-items li:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#sidebar:hover #nav-items {
+    visibility: visible;
+    color: aliceblue;
+    list-style: none;
+    margin-left: -30px;
+}
+
+#sidebar:hover{
+    opacity: 0.8;
+    width: 300px;
+    height: 100vh;
+    height: 100dvh;
+    background-color: hsl(0, 0%, 15%);
+    border-right: 1px solid hsl(0, 0%, 25%);
+
+}
+
